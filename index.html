@@ -8,17 +8,19 @@
 
 </head>
 <body class="">
-
-    <div style="height: 100vh;" class="container d-flex justify-content-center align-items-center ">
-          
-           <div style="width: 34%; height: 61%;" class="container bg-dark rounded">
+  
+    <div style="height: 100vh;" class="container  align-items-center ">
+      <div class="d-flex justify-content-center mt-5">
+        <h2 class="fw-bolder">CALCULATOR</h2>
+       </div>
+           <div style="width: 34%; height: 61%;" class="container bg-dark rounded-3 py-1">
         
-            <input id="result" class="form-control py-2 mt-5 rounded"  type="text" readonly>
+            <input id="result" class="form-control py-3 mt-4 rounded"  type="text" readonly>
            <div class="mx-2 d-flex flex-column justify-content-center">
                <div class="py-2 gap-1 my-1 ">
                     <button onclick="displayData('(')" style="width: 6rem;" type="button" class="btn btn-outline-info ">(</button>
                     <button onclick="displayData(')')" style="width: 6rem;" vtype="button" class="btn btn-outline-info ">)</button>
-                    <button onclick="removeLastCalcItem()" style="width: 6rem;" type="button" class="btn btn-outline-info ">&#9003</button>
+                    <button onclick="displayData('-')" style="width: 6rem;" style="width: 6rem;" type="button" class="btn btn-outline-info ">-</button>
                     <button onclick="displayData('%')" style="width: 6rem;" type="button" class="btn btn-outline-info ">%</button>
     
                </div>
@@ -33,20 +35,23 @@
             <button onclick="displayData('4')" style="width: 6rem;" style="width: 6rem;" type="button" class="btn btn-outline-light">4</button>
             <button onclick="displayData('5')" style="width: 6rem;" style="width: 6rem;" type="button" class="btn btn-outline-light ">5</button>
             <button onclick="displayData('6')" style="width: 6rem;" style="width: 6rem;" type="button" class="btn btn-outline-light"> 6 </button>
-            <button onclick="displayData('-')" style="width: 6rem;" style="width: 6rem;" type="button" class="btn btn-outline-info ">-</button>
+            <button onclick="displayData('+')" style="width: 6rem;" type="button" class="btn btn-outline-info ">+</button>
+
           </div>
           <div class="py-2  my-1 ">
             <button onclick="displayData('1')" style="width: 6rem;" type="button" class="btn btn-outline-light  ">1</button>
             <button onclick="displayData('2')" style="width: 6rem;" type="button" class="btn btn-outline-light  ">2</button>
             <button onclick="displayData('3')" style="width: 6rem;" type="button" class="btn btn-outline-light  ">3</button>
-            <button onclick="displayData('+')" style="width: 6rem;" type="button" class="btn btn-outline-info ">+</button>
+            <button onclick="evaluateExpr('')" style="width: 6rem;" type="button" class="btn btn-outline-info ">=</button>
+
     
        </div>
        <div class="py-2 my-1 ">
         <button onclick="displayData('0')" style="width: 6rem;" type="button" class="btn btn-outline-light ">0</button>
         <button onclick="displayData('.')" style="width: 6rem;" type="button" class="btn btn-outline-info ">.</button>
         <button onclick="clearCalcScreen()" style="width: 6rem;" type="button" class="btn btn-outline-info ">AC</button>
-        <button onclick="evaluateExpr('')" style="width: 6rem;" type="button" class="btn btn-outline-info ">=</button>
+        <button onclick="removeLastCalcItem()" style="width: 6rem;" type="button" class="btn btn-outline-info ">&#9003</button>
+
       </div>
     </div>
     </div>    
